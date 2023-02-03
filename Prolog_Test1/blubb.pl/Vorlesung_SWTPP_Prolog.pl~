@@ -1,0 +1,15 @@
+grandmother(G,S) :- mother(G,C),
+    (   father(C,S);mother(C,S)).
+
+
+father(anakin,luke).
+father(anakin, leia).
+mother(shmi,anakin).
+
+persondata(peter, 41, 'Spooner Street', '31', 'Quahog').
+persondata(peter, age(41),
+           address('Spooner Street', '31', 'Quahog')).
+
+printPlus1(X):- write(X+1).
+
+wert(X).
